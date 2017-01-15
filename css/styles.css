@@ -30,7 +30,7 @@ box-sizing: border-box;
 flex: 1;
 }
 
-.header {
+.main {
 display: block;
 
 }
@@ -54,14 +54,14 @@ flex-direction: column;
 }
 
 @media (max-width: 30em) {
-  .header{
+  .main{
     display: flex;
 flex-direction: column;
   }
 }
 
 @media (min-width: 30em) {
-  .header {
+  .main {
 
 flex-direction: row;
 
@@ -86,12 +86,7 @@ background: rgb(0, 0, 0);
 
 }
 
-.header {
 
-
-
-
-}
 
 .sloganone {
 

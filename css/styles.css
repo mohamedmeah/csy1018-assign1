@@ -41,8 +41,6 @@ body {
   padding: 1em;
   background: rgb(0, 0, 0);
   text-align: center;
-  display flex;
-  flex-direction: row;
 }
 
 /* Declaring rules for aside */
@@ -99,6 +97,7 @@ flex-direction: row;
   .nav {
 flex-direction: row;
   }
+}
   .wrapper {
     flex-direction: row;
     display: flex;
@@ -109,14 +108,12 @@ flex-direction: row;
   .aside {
     width: 30%;
   }
-}
 
 .call-outs-container {
     display: flex;
 flex-direction: row;
 
   }
-}
 
 @media (min-width: 30em) {
   .wrapper {

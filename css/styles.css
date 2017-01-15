@@ -30,7 +30,7 @@ box-sizing: border-box;
 flex: 1;
 }
 
-.main {
+.first {
 display: block;
 
 }
@@ -54,14 +54,14 @@ flex-direction: column;
 }
 
 @media (max-width: 30em) {
-  .main{
+  .first{
     display: flex;
 flex-direction: column;
   }
 }
 
 @media (min-width: 30em) {
-  .main {
+  .first {
 
 flex-direction: row;
 

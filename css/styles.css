@@ -1,3 +1,7 @@
+/* Importing Google Font API */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+/* Declaring rules for body */
 body {
   display: flex;
   flex-direction: column;
@@ -5,38 +9,43 @@ body {
   margin: 0;
   line-height: 100%;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5em;
   color: rgb(77, 77, 77);
   background: rgb(0, 0, 0);
 }
 
+/* Declaring rules for nav */
 .nav {
   order: -1; /* move the nav to the top */
   padding: 1em;
   background: rgb(0, 0, 0);
-
-;
 }
 
+/* Declaring rules for footer */
 .footer {
   padding: 1em;
   background: rgb(0, 0, 0);
   text-align: center;
 }
 
+/* Declaring rules for wrapper */
 .wrapper {
   display: flex;
   flex-direction: row;
   flex: 1 0 auto;
 }
 
+/* Declaring rules for main */
 .main {
   padding: 1em;
   background: rgb(0, 0, 0);
   text-align: center;
+  display flex;
+  flex-direction: row;
 }
 
+/* Declaring rules for aside */
 .aside {
   padding: 1em;
   text-align: center;
@@ -44,25 +53,30 @@ body {
   font-size: 0.77em;
 }
 
+/* Declaring rules for call-out */
 .call-out {
 display: flex;
 box-sizing: border-box;
 flex: 1;
 }
 
+/* Declaring rules for each call-out specifically */
 .call-out:nth-child(1) {background: rgb(0, 0, 0); flex: 1;}
 .call-out:nth-child(2) {background: rgb(0, 0, 0); flex: 2;}
 .call-out:nth-child(3) {background: rgb(0, 0, 0); flex: 2;}
 .call-out:nth-child(4) {background: rgb(0, 0, 0); flex: 1;}
 
+/* Change colour when link visited */
 a:visited {
     color: rgb(77, 77, 77);
 }
 
 /* if viewport is smaller than 30em */
 @media (max-width: 30em) {
-  .main{
+  .wrapper{
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -74,9 +88,9 @@ flex-direction: column;
 }
 
 @media (max-width: 30em) {
-  .first{
+  .wrapper{
     display: flex;
-flex-direction: column;
+flex-direction: row;
   }
 }
 
@@ -87,8 +101,9 @@ flex-direction: row;
   }
   .wrapper {
     flex-direction: row;
+    display: flex;
   }
-  .main {
+  .wrapper {
     flex: 1 1 auto;
   }
   .aside {
@@ -104,8 +119,8 @@ flex-direction: row;
 }
 
 @media (min-width: 30em) {
-  .first {
-
+  .wrapper {
+display: flex;
 flex-direction: row;
 
   }
